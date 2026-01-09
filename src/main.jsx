@@ -11,8 +11,8 @@ import { CartWishlistProvider } from "./context/CartWishlistContext";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Auth0Provider
-      domain="dev-pltnp8lblsap5iau.us.auth0.com"
-      clientId="SbF6XYubKuhpQiqioH0CwPyndnNr2kg0"
+      domain="dev-p34yk3h5c3yu0dyy.us.auth0.com"
+      clientId="WnjNiPT8x7yY06pBzTRruS1oqSHrxlYk"
       authorizationParams={{
         redirect_uri: window.location.origin,
       }}
