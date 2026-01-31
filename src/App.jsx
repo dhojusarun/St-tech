@@ -36,7 +36,7 @@ import Signup from "./pages/Signup";
 import Register from "./pages/Register";
 
 // Info pages
-import Aboutus from "./pages/Aboutus";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 // Payment pages
@@ -119,7 +119,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/about" element={<Aboutus />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/success" element={<Success />} />

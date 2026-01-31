@@ -4,7 +4,7 @@ import { LuBookOpenText } from "react-icons/lu";
 import { IoIosPeople } from "react-icons/io";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
-import Admin from "../../../assets/Homeimage/Admin.png";
+import Admin from "../../../assets/Homeimage/Jameswhite.png";
 import ManageButton from "../admin/ManageButton"
 
 function DashboardHome() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdNotificationsNone } from "react-icons/md";
-import Admin from "../../../assets/Homeimage/Admin.png";
+import Admin from "../../../assets/Homeimage/Jameswhite.png";
 import dash from "../../../assets/Homeimage/dash.png";
 function Dashprofile() {
   return (
@@ -18,6 +18,15 @@ function Dashprofile() {
                  className="w-8 h-8 rounded-full object-cover"
                />
              </div>
+           </div>
+
+           <div className='space-y-4 -mt-10'>
+             <img
+                 src={Admin}
+                 alt=""
+                 className="w-15 h-15 rounded-full object-cover ml-12"
+               />
+               <button className=' p-0.5 shadow shadow-gray-800'>Change Profile Picture</button>
            </div>
 
                  <div className="bg-gradient-to-r from-[#003372] via-[#003372] to-[#E1BB50] h-60 rounded-2xl px-10 py-8 text-justify flex justify-between relative">
