@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaHeart, FaCartShopping, FaSearch } from "react-icons/fa6";
+import { FaHeart, FaCartShopping } from "react-icons/fa6";
 import { NavLink, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { useCartWishlist } from "../context/CartWishlistContext";
 import Uiux from "../assets/Homeimage/Uiux.png";
@@ -18,6 +18,7 @@ import Business from "../assets/Homeimage/Business.png";
 import Brand from "../assets/Homeimage/Brand.png";
 import Public from "../assets/Homeimage/Public.png";
 import Modeling from "../assets/Homeimage/Modeling.png";
+import { FaSearch } from "react-icons/fa";
 
 function Courses() {
   const { addToCart, addToWishlist, wishlist, removeFromWishlist } = useCartWishlist();

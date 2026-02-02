@@ -1,6 +1,7 @@
 import React from "react";
 import bgcourseinfo from "../assets/Homeimage/bgcourseinfo.png";
 import { FaHeart, FaCartShopping } from "react-icons/fa6";
+import { useCartWishlist } from "../context/CartWishlistContext";
 import Mern from "../assets/Homeimage/Mern.png";
 import Henry from "../assets/Homeimage/Henry.png";
 import Stars from "../assets/Homeimage/Stars.png";
@@ -22,6 +23,8 @@ import { FaRegStar } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { NavLink } from "react-router-dom";
 function HenryMern() {
+  const { addToCart, addToWishlist, wishlist, removeFromWishlist } = useCartWishlist();
+  const isWish = (id) => wishlist.some((i) => i.id === id);
   const handleShare = async () => {
     const url = window.location.href;
 
