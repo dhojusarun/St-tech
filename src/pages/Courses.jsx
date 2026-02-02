@@ -119,18 +119,22 @@ function Courses() {
                 </span>
                 <span className="text-xs text-gray-400">REVIEWS</span>
               </div>
-              <h3 className="font-semibold mt-4">{course.title} | {course.duration}</h3>
-              <p className="text-sm text-gray-500 flex items-center gap-2 mt-2">
+              <h3 className={`font-semibold mt-4 ${(course.id === "brand" || course.id === "public") ? "leading-relaxed mb-3" : ""}`}>
+                {course.title} | {course.duration}
+              </h3>
+              <p className={`text-sm text-gray-500 flex items-center gap-2 ${(course.id === "brand" || course.id === "public") ? "mt-5 mb-2" : "mt-2"}`}>
                 <img src={course.teacherImg} alt="" className="rounded-full object-cover w-8 h-8" />
                 By {course.teacherName}
               </p>
               <div className="flex items-center justify-between mb-4">
-                <button
-                  onClick={() => addToCart({ id: course.id, title: course.title, price: course.price, img: course.img })}
-                  className="bg-yellow-300 w-30 items-center mt-3 py-1.5 px-2 gap-2 rounded-xl flex"
-                >
-                  <FaCartShopping className="text-[#003372] size-4" /> Add to cart
-                </button>
+                {!(course.id === "brand" || course.id === "public") && (
+                  <button
+                    onClick={() => addToCart({ id: course.id, title: course.title, price: course.price, img: course.img })}
+                    className="bg-yellow-300 w-30 items-center mt-3 py-1.5 px-2 gap-2 rounded-xl flex"
+                  >
+                    <FaCartShopping className="text-[#003372] size-4" /> Add to cart
+                  </button>
+                )}
                 <button
                   onClick={() =>
                     isWish(course.id)
